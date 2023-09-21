@@ -22,11 +22,11 @@ function App() {
     break;
 
     case DOGS :
-    content = <Dogs  showResult={() => setCurrentScreen(INFO)}/>;
+    content = <Dogs  nextScreen={() => setCurrentScreen(INFO)}/>;
     break;
 
     case INFO :
-      content = <Info restart={restartQuiz}/>
+      content = <Info nextScreen={() => setCurrentScreen(DOGS)}/>;
       break;
 
    default:

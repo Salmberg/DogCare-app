@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Dogs = () => {
+const Dogs = (props) => {
   const [dogsData, setDogsData] = useState([]);
   const apiKey = '$2a$10$5slAltCMfevgT45b5Fdu/.30Z4K913Jib3FagyVjyH8GKAAFIdNXu';
 
@@ -36,7 +36,9 @@ const Dogs = () => {
         {dogsData.map((dog, index) => (
           <li key={index}>
             <h4>{dog.name}</h4>
-            <img src={dog.img} alt={dog.name} />
+            <img src={dog.img}
+             alt={dog.name}
+             onClick={props.nextScreen} />
           </li>
         ))}
       </ul>
