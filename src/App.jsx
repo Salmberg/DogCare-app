@@ -26,7 +26,7 @@ function App() {
     break;
 
     case INFO :
-      content = <Info score={score} restart={restartQuiz}/>
+      content = <Info restart={restartQuiz}/>
       break;
 
    default:
