@@ -1,5 +1,6 @@
 {
   "name": "dogcare-app",
+  "homepage": "https://salmberg.github.io/DogCare-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
