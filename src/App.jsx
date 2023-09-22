@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { Fragment, useState } from 'react'
 import './App.css'
+import './navbar.css'
 import Start from './Components/Start'
 import Dogs from './Components/Dogs'
 import Info from './Components/Info'
+import Navbar from './Components/Navbar'
 
 
 
@@ -36,11 +36,15 @@ function App() {
 
   return (
    
+<Fragment>
+    <Navbar />
     <div>
       {content}
     </div>
+  </Fragment>
+
     
-  )
+  );
 }
 
 export default App
