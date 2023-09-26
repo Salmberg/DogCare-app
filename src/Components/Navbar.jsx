@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import {FaBars, FaTimes } from 'react-icons/fa';
+import '/src/Navbar.css';
 
 
-function Navbar() {
+function Navbar(props) {
     const navRef = useRef();
 
     const showNavBar = () => {
@@ -16,7 +17,7 @@ function Navbar() {
             <nav ref={navRef}>
                 <ul>
                     <a href="/#">Home</a>
-                    <a href="/#">Dogs</a>
+                    <a href="/#" onClick={props.nextScreen}>Dogs</a>
                     <a href="/#">Services</a>
                 </ul>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>

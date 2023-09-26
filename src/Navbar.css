@@ -26,11 +26,15 @@ padding: 0 2rem;
 background-color: var(--mainColor);
 color: var(--textColor);
 }
+
 nav a {
 margin: 0 2rem;
+font-size: large;
 color: var(--textColor);
 text-decoration: none;
 }
+
+
 nav a:hover {
 color: var(--secondaryColor);
 }
@@ -45,6 +49,7 @@ background: transparent;
 color: var(--textColor);
 visibility: hidden;
 opacity: 0;
+font-size: 1.8rem;
 }
 
 @media only screen and (max-width: 1024px){
@@ -64,12 +69,33 @@ header nav {
   justify-content: center;
   gap: 1.5rem;
   background-color: var(--mainColor);
-  transition: 1s;
-  transform: translateX(-100vh);
+  transition: 0.5s;
+  transform: translateY(-100vh);
 }
 
 header .responsive_navbar {
-  transform: translateX(0);
+  transform: none;
 }
+
+nav .nav-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  color: var(--textColor);
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+
 
 }
