@@ -105,7 +105,7 @@ nav .nav-close-btn {
   cursor: pointer;
   outline: none;
   background: transparent;
-  color: var(--textColor);
+  color: var(--textColorNav);
 }
 
 nav a {
