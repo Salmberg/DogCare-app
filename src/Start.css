@@ -1,0 +1,21 @@
+
+.start-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+
+  }
+
+  .start-div button {
+    margin: 10px;
+    margin-top: 5em;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

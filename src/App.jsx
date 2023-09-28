@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import './App.css';
 import './navbar.css';
+
 import Start from './Components/Start';
 import Dogs from './Components/Dogs';
 import Info from './Components/Info';
@@ -31,8 +32,9 @@ function App() {
 
   return (
     <Fragment>
+      
       <Navbar nextScreen={setCurrentScreen} />
-      <div>{content}</div>
+      <div className='content'>{content}</div>
     </Fragment>
   );
 }

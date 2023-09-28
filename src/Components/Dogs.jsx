@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../Dogs.css';
 
 const Dogs = (props) => {
   const [dogsData, setDogsData] = useState([]);
@@ -30,18 +31,22 @@ const Dogs = (props) => {
   }, [apiKey])
 
   return (
-    <section>
+    <section className='dogs-section'>
       <h3>The Dawgs</h3>
-      <ul>
+      <div className='dog-div'>
+      <ul className='dog-list'>
         {dogsData.map((dog, index) => (
           <li key={index}>
-            <h4>{dog.name}</h4>
-            <img src={dog.img}
-             alt={dog.name}
-             onClick={props.nextScreen} />
+            <h4 id="dog-name">{dog.name}</h4>
+            <img
+              src={dog.img}
+              alt={dog.name}
+              className="dog-image"
+              onClick={props.nextScreen}/>
           </li>
         ))}
       </ul>
+      </div>
     </section>
   )
 }
