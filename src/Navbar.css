@@ -15,6 +15,7 @@
 --mainColorDarker: #3a3ff2;
 --secondaryColor: #ff6464;
 --textColor: black;
+--textVolorNav: white;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 nav a {
 margin: 0 2rem;
 font-size: large;
-color: var(--textColor);
+color: var(--textColorNav);
 text-decoration: none;
 }
 
