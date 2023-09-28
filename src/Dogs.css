@@ -19,7 +19,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     list-style: none; /* Tar bort punkterna från oordnade listor */
     padding: 0; /* Tar bort standardmarginalen från listan */
-    
+
+
 }
 
 #dog-name {
@@ -29,21 +30,23 @@
     margin: 10px;
 }
 
-.dog-image {
-    max-width: 100%; /* Säkerställ att bilder inte är bredare än deras container */
-    height: auto; /* Bevara bildens aspektförhållande */
-    border-radius: 8px; /* Avrunda hörnen om det behövs */
-    margin: 10px; /* Lägg till marginaler om det behövs */
-  }
+
 
 
 /* Mobilstilar för mindre än 768px skärmstorlek */
 @media only screen and (max-width: 768px) {
-    .dog-image {
-        max-width: 100%; /* Säkerställ att bilder inte är bredare än deras container */
-        height: auto; /* Bevara bildens aspektförhållande */
-        border-radius: 8px; 
-        margin: 10px; 
+    .dog-image.landscape {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 10px;
+      }
+      
+      .dog-image.portrait {
+        max-height: 100%;
+        width: auto;
+        border-radius: 8px;
+        margin: 10px;
       }
 
       body {
@@ -61,11 +64,18 @@
       gap: 2em;
       
     }
-    .dog-image {
-        max-width: 100%; /* Säkerställ att bilder inte är bredare än deras container */
-        height: auto; /* Bevara bildens aspektförhållande */
-        border-radius: 8px; 
-        margin: 10px; 
+    .dog-image.landscape {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 10px;
+      }
+      
+      .dog-image.portrait {
+        max-height: 100%;
+        width: auto;
+        border-radius: 8px;
+        margin: 10px;
       }
 
   }
@@ -80,11 +90,18 @@
       margin: 10px;
       gap: 2em;
     }
-    .dog-image {
-        max-width: 100%; /* Säkerställ att bilder inte är bredare än deras container */
-        height: auto; /* Bevara bildens aspektförhållande */
-        border-radius: 8px; 
-        margin: 10px; 
+    .dog-image.landscape {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 10px;
+      }
+      
+      .dog-image.portrait {
+        max-height: 100%;
+        width: auto;
+        border-radius: 8px;
+        margin: 10px;
       }
 
   }

@@ -13,7 +13,6 @@ function Navbar(props) {
     return (
 
         <header>
-            <h3>Logo</h3>
             <nav ref={navRef}>
                 <ul>
                     <a href="/#">Home</a>

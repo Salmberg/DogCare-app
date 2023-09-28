@@ -41,7 +41,7 @@ const Dogs = (props) => {
             <img
               src={dog.img}
               alt={dog.name}
-              className="dog-image"
+              className={dog.height > dog.width ? 'dog-image portrait' : 'dog-image landscape'}
               onClick={props.nextScreen}/>
           </li>
         ))}

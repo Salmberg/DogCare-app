@@ -18,13 +18,16 @@
 }
 
 header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-height: 80px;
-padding: 0 2rem;
-background-color: var(--mainColor);
-color: var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30vh;
+  padding: 0 2rem;
+  background-image: url('./images/background.jpeg'); /* Lägg till sökvägen till din bild */
+  background-size: cover; /* Justera storleken på bakgrundsbilden efter behov */
+  background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
+  background-position: center 35%; /* Centrera bakgrundsbilden */
+  color: var(--textColor);
 }
 
 nav a {
@@ -56,6 +59,19 @@ font-size: 1.8rem;
 header .nav-btn {
   visibility: visible;
   opacity: 1;
+  margin-left: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0 2rem;
+  background-image: url('./images/background.jpeg'); /* Lägg till sökvägen till din bild */
+  background-size: cover; /* Justera storleken på bakgrundsbilden efter behov */
+  background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
+  background-position: center 30%; /* Centrera bakgrundsbilden */
+  color: var(--textColor);
 }
 
 header nav {
@@ -71,6 +87,7 @@ header nav {
   background-color: var(--mainColor);
   transition: 0.5s;
   transform: translateY(-100vh);
+  opacity: 0.9;
 }
 
 header .responsive_navbar {
@@ -96,6 +113,23 @@ nav a {
   font-size: 2rem;
 }
 
-
-
 }
+
+
+  /* Stilar för iPad (768px - 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+   
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 20vh;
+      padding: 0 2rem;
+      background-image: url('./images/background.jpeg'); /* Lägg till sökvägen till din bild */
+      background-size: cover; /* Justera storleken på bakgrundsbilden efter behov */
+      background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
+      background-position: center 30%; /* Centrera bakgrundsbilden */
+      color: var(--textColor);
+    }
+
+  }
