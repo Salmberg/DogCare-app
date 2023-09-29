@@ -38,6 +38,9 @@ color: var(--textColorNav);
 text-decoration: none;
 }
 
+nav ul {
+  color: var(--textColorNav);
+}
 
 nav a:hover {
 color: var(--secondaryColor);

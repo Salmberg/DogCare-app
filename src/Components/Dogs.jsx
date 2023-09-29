@@ -33,7 +33,7 @@ const Dogs = (props) => {
   return (
     <section className='dogs-section'>
       <h3>The Dawgs</h3>
-      <div className='dog-div'>
+      { <div className='dog-div'>
       <ul className='dog-list'>
         {dogsData.map((dog, index) => (
           <li key={index}>
@@ -46,7 +46,7 @@ const Dogs = (props) => {
           </li>
         ))}
       </ul>
-      </div>
+      </div> }
     </section>
   )
 }

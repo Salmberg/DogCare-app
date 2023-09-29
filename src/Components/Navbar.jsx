@@ -1,23 +1,25 @@
 import { useRef } from 'react';
 import {FaBars, FaTimes } from 'react-icons/fa';
-import '/src/Navbar.css';
+import '../Navbar.css';
 
 
 function Navbar(props) {
     const navRef = useRef();
-
+    
     const showNavBar = () => {
         navRef.current.classList.toggle('responsive_navbar');
     }
+    
+    
 
     return (
 
         <header>
             <nav ref={navRef}>
                 <ul>
-                    <a href="/#">Home</a>
-                    <a href="/#" onClick={props.nextScreen}>Dogs</a>
-                    <a href="/#">Services</a>
+                <div onClick={props.nextScreen}>Hem</div>
+                <div onClick={props.nextScreen}>Våra hundar</div>
+                <div onClick={props.nextScreen}>Tjänster</div>
                 </ul>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                 <FaTimes/>

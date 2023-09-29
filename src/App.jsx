@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import './App.css';
-import './navbar.css';
+
 
 import Start from './Components/Start';
 import Dogs from './Components/Dogs';
@@ -10,6 +10,7 @@ import Navbar from './Components/Navbar';
 function App() {
   const START = 'start', DOGS = 'dogs', INFO = 'info';
   const [currentScreen, setCurrentScreen] = useState(START);
+  console.log(currentScreen);
 
   let content = null;
 
@@ -19,7 +20,7 @@ function App() {
       break;
 
     case DOGS:
-      content = <Dogs nextScreen={() => setCurrentScreen(INFO)} />;
+      content = <Dogs />//nextScreen={() => setCurrentScreen(INFO)} />;
       break;
 
     case INFO:
@@ -33,7 +34,7 @@ function App() {
   return (
     <Fragment>
       
-      <Navbar nextScreen={setCurrentScreen} />
+      <Navbar nextScreen={() => setCurrentScreen(DOGS)} />
       <div className='content'>{content}</div>
     </Fragment>
   );
