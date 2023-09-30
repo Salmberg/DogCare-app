@@ -8,7 +8,7 @@ import Info from './Components/Info';
 import Navbar from './Components/Navbar';
 
 function App() {
-  const START = 'start', DOGS = 'dogs', INFO = 'info';
+  const START = 'start', DOGS = 'dogs', SERVICES = 'services', CONTACT = 'contact';
   const [currentScreen, setCurrentScreen] = useState(START);
   console.log(currentScreen);
 
@@ -16,15 +16,19 @@ function App() {
 
   switch (currentScreen) {
     case START:
-      content = <Start nextScreen={() => setCurrentScreen(DOGS)} />;
+      content = <Start nextScreen={() => setCurrentScreen(START)} />;
       break;
 
     case DOGS:
       content = <Dogs />//nextScreen={() => setCurrentScreen(INFO)} />;
       break;
 
-    case INFO:
-      content = <Info nextScreen={() => setCurrentScreen(DOGS)} />;
+    case SERVICES:
+      content = <Services /> // nextScreen={() => setCurrentScreen(SERVICES)} />;
+      break;
+
+    case CONTACT:
+      content = <Contact /> // nextScreen={() => setCurrentScreen(CONTACT)} />;
       break;
 
     default:

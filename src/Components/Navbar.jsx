@@ -10,6 +10,12 @@ function Navbar(props) {
         navRef.current.classList.toggle('responsive_navbar');
     }
     
+
+     // Funktion för att stänga menyn och navigera till nästa skärm
+  const handleLinkClick = () => {
+    showNavBar(); // Anropa showNavBar för att dölja menyn
+    props.nextScreen(); // Anropa props.nextScreen för att navigera till nästa skärm
+  }
     
 
     return (
@@ -17,9 +23,10 @@ function Navbar(props) {
         <header>
             <nav ref={navRef}>
                 <ul>
-                <div onClick={props.nextScreen}>Hem</div>
-                <div onClick={props.nextScreen}>Våra hundar</div>
-                <div onClick={props.nextScreen}>Tjänster</div>
+                <div onClick={handleLinkClick}>Hem</div>
+                <div onClick={handleLinkClick}>Våra hundar</div>
+                <div onClick={handleLinkClick}>Tjänster</div>
+                <div onClick={handleLinkClick}>Kontakt</div>
                 </ul>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                 <FaTimes/>

@@ -20,14 +20,19 @@
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: large;
   height: 30vh;
   padding: 0 2rem;
   background-image: url('./images/background.jpeg'); /* Lägg till sökvägen till din bild */
   background-size: cover; /* Justera storleken på bakgrundsbilden efter behov */
   background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
   background-position: center 35%; /* Centrera bakgrundsbilden */
+  color: var(--textColor);
+}
+
+header div {
   color: var(--textColor);
 }
 
@@ -39,7 +44,12 @@ text-decoration: none;
 }
 
 nav ul {
+  display: flex; /* Visa listan med element som en rad */
+  list-style: none;
+  padding: 10px;
+  margin: 0;
   color: var(--textColorNav);
+  gap: 1.5rem;
 }
 
 nav a:hover {
@@ -59,6 +69,14 @@ opacity: 0;
 font-size: 1.8rem;
 }
 
+
+
+
+
+
+
+
+/*Stilar för mobil*/
 @media only screen and (max-width: 768px){
 header .nav-btn {
   visibility: visible;
@@ -75,7 +93,7 @@ header {
   background-size: cover; /* Justera storleken på bakgrundsbilden efter behov */
   background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
   background-position: center 30%; /* Centrera bakgrundsbilden */
-  color: var(--textColor);
+  color: var(--textColorNav);
 }
 
 header nav {
@@ -117,7 +135,29 @@ nav a {
   font-size: 2rem;
 }
 
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* Ändra flexriktningen till kolumn för att visa länkarna vertikalt */
+  align-items: center; /* Centrera länkarna horisontellt */
+  margin-top: 1rem;
+  font-size: x-large;
+  color: var(--textColorNav);
 }
+
+/*Elementen innanför menyn som åker ned*/
+nav ul div {
+  color: var(--textColorNav);
+}
+
+}
+
+
+
+
+
+
+
 
 
   /* Stilar för iPad (768px - 1024px) */
@@ -125,8 +165,9 @@ nav a {
    
     header {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size: large;
       height: 20vh;
       padding: 0 2rem;
       background-image: url('./images/background.jpeg'); /* Lägg till sökvägen till din bild */
