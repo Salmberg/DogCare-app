@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Bebas+Neue&family=Grape+Nuts&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@1,700&family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
 
 * {
   margin: 0;
@@ -31,6 +34,29 @@ header {
   background-position: center 35%; /* Centrera bakgrundsbilden */
   color: var(--textColor);
 }
+
+h1 {
+  position: absolute; 
+  top: 10%; /* Position h1 at the top of the viewport */
+  left: 50%; /* Center h1 horizontally */
+  transform: translateX(-50%); /* Center h1 horizontally */
+  font-size: 3rem;
+  font-family: 'Holtwood One SC', serif;
+  color: rgb(192, 141, 47);
+  z-index: 1; /* Ensure h1 is above other content */
+}
+
+h2 {
+  position: absolute; 
+  top: 15%; /* Position h1 at the top of the viewport */
+  left: 50%; /* Center h1 horizontally */
+  transform: translateX(-50%); /* Center h1 horizontally */
+  font-size: 2rem;
+  font-family: 'Nothing You Could Do', cursive;
+  color: black;
+  z-index: 1; /* Ensure h1 is above other content */
+}
+
 
 header div {
   color: var(--textColor);
@@ -96,6 +122,14 @@ header {
   color: var(--textColorNav);
 }
 
+header h1 {
+  visibility: hidden;
+}
+header h2 {
+  visibility: hidden;
+}
+
+
 header nav {
   position: fixed;
   top: 0;
@@ -154,12 +188,6 @@ nav ul div {
 
 
 
-
-
-
-
-
-
   /* Stilar för iPad (768px - 1024px) */
   @media screen and (min-width: 768px) and (max-width: 1024px) {
    
@@ -168,7 +196,7 @@ nav ul div {
       align-items: flex-start;
       justify-content: flex-start;
       font-size: large;
-      height: 20vh;
+      height: 30vh;
       padding: 0 2rem;
       background-image: url('./images/background.jpeg'); /* Lägg till sökvägen till din bild */
       background-size: cover; /* Justera storleken på bakgrundsbilden efter behov */

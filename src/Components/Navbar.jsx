@@ -20,22 +20,30 @@ function Navbar(props) {
 
     return (
 
+        
         <header>
+         <h1>Golden dogs</h1>
+            <h2>For you and your best friend</h2>
+
             <nav ref={navRef}>
                 <ul>
-                <div onClick={handleLinkClick}>Hem</div>
-                <div onClick={handleLinkClick}>Våra hundar</div>
-                <div onClick={handleLinkClick}>Tjänster</div>
-                <div onClick={handleLinkClick}>Kontakt</div>
+                <a onClick={handleLinkClick}>Hem</a>
+                <a onClick={handleLinkClick}>Våra hundar</a>
+                <a onClick={handleLinkClick}>Tjänster</a>
+                <a onClick={handleLinkClick}>Kontakt</a>
+
                 </ul>
+
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                 <FaTimes/>
                 </button>
             </nav>
+
             <button className="nav-btn" onClick={showNavBar}>
                 <FaBars/>   
             </button>
         </header>
+        
     );
 }
 export default Navbar;

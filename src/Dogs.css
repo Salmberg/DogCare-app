@@ -8,6 +8,10 @@
     border: 2px solid green;
 }
 
+.dogs-section h3 {
+  font-size: xx-large;
+}
+
 .dog-div {
   max-width: 100%; /* Sätt en maximal bredd för .dog-div */
   overflow: hidden; /* Dölj innehållet som går utanför .dog-div */

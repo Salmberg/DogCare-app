@@ -40,6 +40,7 @@ function App() {
       
       <Navbar nextScreen={() => setCurrentScreen(DOGS)} />
       <div className='content'>{content}</div>
+     
     </Fragment>
   );
 }

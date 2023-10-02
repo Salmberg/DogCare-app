@@ -32,7 +32,7 @@ const Dogs = (props) => {
 
   return (
     <section className='dogs-section'>
-      <h3>The Dawgs</h3>
+      <h3>Våra hundar</h3>
       { <div className='dog-div'>
       <ul className='dog-list'>
         {dogsData.map((dog, index) => (
