@@ -10,7 +10,7 @@ const Start = (props) => {
                 <div className="grid-item">
                     <div className="item-content">
                         <div className="image-box">
-                            <img src="UteBild.jpeg" alt="Image 1" />
+                            <img src="../src/images/UteBild.jpeg" alt="Image 1" />
                         </div>
                         <div className="text-box">
                             <p>Golden Dogs är mer än bara ett hunddagis. Det är en fristad för våra fyrbenta vänner, en plats där de kan leka, lära sig och trivas medan du är borta. Vi förstår att din hund är en viktig medlem av din familj, och därför strävar vi efter att erbjuda den bästa omsorgen och upplevelsen för varje hund som går genom våra dörrar.</p>
