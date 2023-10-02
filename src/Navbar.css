@@ -53,7 +53,7 @@ h2 {
   transform: translateX(-50%); /* Center h1 horizontally */
   font-size: 2rem;
   font-family: 'Nothing You Could Do', cursive;
-  color: black;
+  color: white;
   z-index: 1; /* Ensure h1 is above other content */
 }
 
