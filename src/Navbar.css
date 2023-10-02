@@ -21,6 +21,7 @@
 --textColorNav: white;
 }
 
+
 header {
   display: flex;
   align-items: flex-start;
@@ -123,11 +124,27 @@ header {
 }
 
 header h1 {
-  visibility: hidden;
+  position: absolute; 
+  top: 3%; /* Position h1 at the top of the viewport */
+  left: 50%; /* Center h1 horizontally */
+  transform: translateX(-50%); /* Center h1 horizontally */
+  font-size: 1.5rem;
+  font-family: 'Holtwood One SC', serif;
+  color: rgb(192, 141, 47);
+  z-index: 1; /* Ensure h1 is above other content */
 }
+
 header h2 {
-  visibility: hidden;
+  position: absolute; 
+  top: 5%; /* Position h1 at the top of the viewport */
+  left: 50%; /* Center h1 horizontally */
+  transform: translateX(-50%); /* Center h1 horizontally */
+  font-size: 1rem;
+  font-family: 'Nothing You Could Do', cursive;
+  color: white;
+  z-index: 1; /* Ensure h1 is above other content */
 }
+  
 
 
 header nav {

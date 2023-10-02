@@ -23,6 +23,7 @@
 
 .item-content {
   display: flex;
+  align-items: center;
   width: 100%; /* Tar upp hela bredden av fältet */
   padding: 20px;
 }
@@ -30,6 +31,7 @@
 .image-box {
   flex: 1; /* Bildrutan tar upp 1/2 av utrymmet */
   margin-right: 20px; /* Avstånd mellan bild- och textrutan */
+  margin-left: 20px;
 }
 
 img {
@@ -48,5 +50,25 @@ h2 {
 
 p {
   font-size: 1rem;
+}
+
+
+/* Stilar för mobila enheter med en maximal bredd på 768px */
+@media screen and (max-width: 768px) {
+  .item-content {
+    flex-direction: column; /* Ändra riktningen till kolumn */
+    align-items: center; /* Centrera innehållet vertikalt */
+    text-align: center; /* Centrera texten horisontellt */
+  }
+
+  .image-box,
+  .text-box {
+    flex: 1; /* Ta upp hela bredden av fältet */
+    margin: 0; /* Ta bort marginaler mellan bild och text */
+  }
+
+  .image-box {
+    margin-bottom: 10px; /* Lägg till lite avstånd under bilden */
+  }
 }
 
