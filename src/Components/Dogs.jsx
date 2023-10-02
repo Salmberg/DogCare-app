@@ -43,6 +43,10 @@ const Dogs = (props) => {
               alt={dog.name}
               className={dog.height > dog.width ? 'dog-image portrait' : 'dog-image landscape'}
               onClick={props.nextScreen}/>
+              <div className="info-box">
+            <p>Ras: {dog.breed}</p>
+            <p>Ålder: {dog.age}</p>
+              </div>
           </li>
         ))}
       </ul>

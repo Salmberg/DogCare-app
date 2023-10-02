@@ -13,17 +13,28 @@
 }
 
 .dog-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%; /* Sätt en maximal bredd för .dog-div */
   overflow: hidden; /* Dölj innehållet som går utanför .dog-div */
   
 }
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .dog-list{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 10px;
     border-radius: 8px;
@@ -32,6 +43,7 @@
     list-style: none; /* Tar bort punkterna från oordnade listor */
     padding: 0; /* Tar bort standardmarginalen från listan */
     border: 2px solid #151414;
+    
 }
 
 .dog-image {
@@ -73,6 +85,14 @@
       body {
         overflow-x: hidden;
       }
+      .dog-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Sätt en maximal bredd för .dog-div */
+        overflow: hidden; /* Dölj innehållet som går utanför .dog-div */
+        
+      }
   }
 
 
@@ -83,8 +103,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* Två kolumner för iPad */
       gap: 2em;
-      
     }
+
+
     .dog-image.landscape {
         max-width: 100%;
         height: auto;

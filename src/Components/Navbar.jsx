@@ -10,11 +10,25 @@ function Navbar(props) {
         navRef.current.classList.toggle('responsive_navbar');
     }
     
-
-     // Funktion för att stänga menyn och navigera till nästa skärm
-  const handleLinkClick = () => {
+   
+   const handleLinkClickHome = () => {
     showNavBar(); // Anropa showNavBar för att dölja menyn
-    props.nextScreen(); // Anropa props.nextScreen för att navigera till nästa skärm
+    props.homeScreen(); // Anropa props.nextScreen för att navigera till nästa skärm
+  }
+     
+  const handleLinkClickDogs = () => {
+    showNavBar(); // Anropa showNavBar för att dölja menyn
+    props.dogsScreen(); // Anropa props.nextScreen för att navigera till nästa skärm
+  }
+
+ const handleLinkClickServices = () => {
+        showNavBar(); // Anropa showNavBar för att dölja menyn
+        props.servicesScreen(); // Anropa props.nextScreen för att navigera till nästa skärm
+      }
+         
+  const handleLinkClickDogContact = () => {
+    showNavBar(); // Anropa showNavBar för att dölja menyn
+    props.contactScreen(); // Anropa props.nextScreen för att navigera till nästa skärm
   }
     
 
@@ -27,10 +41,10 @@ function Navbar(props) {
 
             <nav ref={navRef}>
                 <ul>
-                <a onClick={handleLinkClick}>Hem</a>
-                <a onClick={handleLinkClick}>Våra hundar</a>
-                <a onClick={handleLinkClick}>Tjänster</a>
-                <a onClick={handleLinkClick}>Kontakt</a>
+                <a onClick={handleLinkClickHome}>Hem</a>
+                <a onClick={handleLinkClickDogs}>Våra hundar</a>
+                <a onClick={handleLinkClickServices}>Tjänster</a>
+                <a onClick={handleLinkClickDogContact}>Kontakt</a>
 
                 </ul>
 

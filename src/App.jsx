@@ -4,7 +4,8 @@ import './App.css';
 
 import Start from './Components/Start';
 import Dogs from './Components/Dogs';
-import Info from './Components/Info';
+import Services from './Components/Services';
+import Contact from './Components/Contact';
 import Navbar from './Components/Navbar';
 
 function App() {
@@ -16,19 +17,19 @@ function App() {
 
   switch (currentScreen) {
     case START:
-      content = <Start nextScreen={() => setCurrentScreen(START)} />;
+      content = <Start />;
       break;
 
     case DOGS:
-      content = <Dogs />//nextScreen={() => setCurrentScreen(INFO)} />;
+      content = <Dogs />
       break;
 
     case SERVICES:
-      content = <Services /> // nextScreen={() => setCurrentScreen(SERVICES)} />;
+      content = <Services /> 
       break;
 
     case CONTACT:
-      content = <Contact /> // nextScreen={() => setCurrentScreen(CONTACT)} />;
+      content = <Contact /> 
       break;
 
     default:
@@ -38,7 +39,13 @@ function App() {
   return (
     <Fragment>
       
-      <Navbar nextScreen={() => setCurrentScreen(DOGS)} />
+      <Navbar 
+      homeScreen={() => setCurrentScreen(START)}
+      dogsScreen={() => setCurrentScreen(DOGS)}
+      servicesScreen={() => setCurrentScreen(SERVICES)}
+      contactScreen={() => setCurrentScreen(CONTACT)}
+      
+      />
       <div className='content'>{content}</div>
      
     </Fragment>
