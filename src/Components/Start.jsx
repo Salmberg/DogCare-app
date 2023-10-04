@@ -40,7 +40,7 @@ const Start = (props) => {
                             <img src={VilaBild} alt="Image 1" />
                         </div>
                         <div className="text-box">
-                            <p>På Hundens Paradis är vår filosofi enkel - att skapa en kärleksfull och trygg miljö där din hund kan trivas och växa. Vi strävar efter att bli en förlängning av din egen familj och ge din hund den kärlek och omsorg den förtjänar.
+                            <p>På Golden Dogs är vår filosofi enkel - att skapa en kärleksfull och trygg miljö där din hund kan trivas och växa. Vi strävar efter att bli en förlängning av din egen familj och ge din hund den kärlek och omsorg den förtjänar.
 
                                 Så när du behöver en pålitlig plats att ta hand om din hund när du är borta, tveka inte att kontakta oss på Hundens Paradis. Din hund kommer att bli en del av vår familj och njuta av en underbar tid fylld med lek, kärlek och äventyr.
 

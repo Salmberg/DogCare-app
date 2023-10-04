@@ -7,7 +7,7 @@ const Info = (props) => {
         <section>
           
       <h3>Info about the dawgs</h3>
-      <button onClick={props.nextScreen}>Tillbaka</button>
+      
     
         </section>
     )

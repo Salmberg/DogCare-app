@@ -6,10 +6,11 @@ import Start from './Components/Start';
 import Dogs from './Components/Dogs';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
+import Info from './Components/Info';
 import Navbar from './Components/Navbar';
 
 function App() {
-  const START = 'start', DOGS = 'dogs', SERVICES = 'services', CONTACT = 'contact';
+  const START = 'start', DOGS = 'dogs', SERVICES = 'services', CONTACT = 'contact', INFO = 'info';
   const [currentScreen, setCurrentScreen] = useState(START);
   console.log(currentScreen);
 
@@ -21,7 +22,7 @@ function App() {
       break;
 
     case DOGS:
-      content = <Dogs />
+      content = <Dogs infoScreen={() => { console.log('infosidan '); setCurrentScreen(INFO)}}/>
       break;
 
     case SERVICES:
@@ -30,6 +31,10 @@ function App() {
 
     case CONTACT:
       content = <Contact /> 
+      break;
+
+      case INFO: 
+      content = <Info />
       break;
 
     default:
@@ -44,6 +49,7 @@ function App() {
       dogsScreen={() => setCurrentScreen(DOGS)}
       servicesScreen={() => setCurrentScreen(SERVICES)}
       contactScreen={() => setCurrentScreen(CONTACT)}
+      infoScreen={() => setCurrentScreen(INFO)}
       
       />
       <div className='content'>{content}</div>

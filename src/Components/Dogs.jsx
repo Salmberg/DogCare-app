@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../Dogs.css';
 
+
 const Dogs = (props) => {
   const [dogsData, setDogsData] = useState([]);
   const apiKey = '$2a$10$5slAltCMfevgT45b5Fdu/.30Z4K913Jib3FagyVjyH8GKAAFIdNXu';
@@ -30,6 +31,8 @@ const Dogs = (props) => {
       });
   }, [apiKey])
 
+ 
+
   return (
     <section className='dogs-section'>
       <h3>Våra hundar</h3>
@@ -42,7 +45,7 @@ const Dogs = (props) => {
               src={dog.img}
               alt={dog.name}
               className={dog.height > dog.width ? 'dog-image portrait' : 'dog-image landscape'}
-              onClick={props.nextScreen}/>
+              onClick={props.infoScreen}/>
               <div className="info-box">
             <p>Ras: {dog.breed}</p>
             <p>Ålder: {dog.age}</p>
