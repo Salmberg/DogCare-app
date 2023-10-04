@@ -12,6 +12,7 @@ import Navbar from './Components/Navbar';
 function App() {
   const START = 'start', DOGS = 'dogs', SERVICES = 'services', CONTACT = 'contact', INFO = 'info';
   const [currentScreen, setCurrentScreen] = useState(START);
+  const [selectedDog, setSelectedDog] = useState(null);
   console.log(currentScreen);
 
   let content = null;
@@ -22,7 +23,7 @@ function App() {
       break;
 
     case DOGS:
-      content = <Dogs infoScreen={() => { console.log('infosidan '); setCurrentScreen(INFO)}}/>
+      content = <Dogs infoScreen={(dog) => { setSelectedDog(dog); setCurrentScreen(INFO); }} /> // Uppdatera infoScreen-prop
       break;
 
     case SERVICES:
@@ -34,7 +35,7 @@ function App() {
       break;
 
       case INFO: 
-      content = <Info />
+      content = <Info dog={selectedDog}/>
       break;
 
     default:

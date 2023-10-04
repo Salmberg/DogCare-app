@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    border: 2px solid green;
 }
 
 .dogs-section h3 {
@@ -21,12 +20,6 @@
   
 }
 
-.info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 
 .dog-list{
@@ -38,11 +31,8 @@
     margin: 0;
     padding: 10px;
     border-radius: 8px;
-    background-color: #f2f2f2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     list-style: none; /* Tar bort punkterna från oordnade listor */
     padding: 0; /* Tar bort standardmarginalen från listan */
-    border: 2px solid #151414;
     
 }
 

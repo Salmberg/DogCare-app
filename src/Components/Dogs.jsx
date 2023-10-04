@@ -31,7 +31,10 @@ const Dogs = (props) => {
       });
   }, [apiKey])
 
- 
+  const handleImageClick = (dog) => {
+    // Skicka med hela dog-objektet som props när en bild klickas
+    props.infoScreen(dog);
+  }
 
   return (
     <section className='dogs-section'>
@@ -45,10 +48,8 @@ const Dogs = (props) => {
               src={dog.img}
               alt={dog.name}
               className={dog.height > dog.width ? 'dog-image portrait' : 'dog-image landscape'}
-              onClick={props.infoScreen}/>
+              onClick={() => handleImageClick(dog)}/>
               <div className="info-box">
-            <p>Ras: {dog.breed}</p>
-            <p>Ålder: {dog.age}</p>
               </div>
           </li>
         ))}
