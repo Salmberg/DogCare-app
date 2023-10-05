@@ -39,22 +39,22 @@ const Dogs = (props) => {
   return (
     <section className='dogs-section'>
       <h3>Våra hundar</h3>
-      { <div className='dog-div'>
-      <ul className='dog-list'>
-        {dogsData.map((dog, index) => (
-          <li key={index}>
-            <h4 id="dog-name">{dog.name}</h4>
-            <img
-              src={dog.img}
-              alt={dog.name}
-              className={dog.height > dog.width ? 'dog-image portrait' : 'dog-image landscape'}
-              onClick={() => handleImageClick(dog)}/>
+      {<div className='dog-div'>
+        <ul className='dog-list'>
+          {dogsData.map((dog, index) => (
+            <li key={index}>
+              <h4 id="dog-name">{dog.name}</h4>
+              <img
+                src={dog.img}
+                alt={dog.name}
+                className={dog.height > dog.width ? 'dog-image portrait' : 'dog-image landscape'}
+                onClick={() => handleImageClick(dog)} />
               <div className="info-box">
               </div>
-          </li>
-        ))}
-      </ul>
-      </div> }
+            </li>
+          ))}
+        </ul>
+      </div>}
     </section>
   )
 }

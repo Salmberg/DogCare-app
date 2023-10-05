@@ -28,10 +28,10 @@ const Contact = (props) => {
     });
   };
 
- 
+
 
   return (
-    <section>
+    <section className='contact-section'>
       <h3 id="contact-us-label">Kontakta oss</h3>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

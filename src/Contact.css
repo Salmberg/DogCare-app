@@ -16,6 +16,13 @@
 section {
     background-color: wheat;
     padding: 20px;
+    height: 100%;
+  }
+
+  .contact-section {
+    background-color: wheat;
+    padding: 20px;
+    height: 100vh;
   }
   
   form {

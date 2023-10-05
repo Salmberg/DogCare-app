@@ -6,9 +6,9 @@ const Info = (props) => {
 
   return (
     <div className='info-container'>
+      <h3>{name}</h3>
       <img src={img}
-           alt={name} />
-      <p>Namn: {name}</p>
+        alt={name} />
       <p>Ras: {breed}</p>
       <p>Ålder: {age}</p>
       <p>Kön: {sex}</p>
