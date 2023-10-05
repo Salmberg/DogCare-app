@@ -23,12 +23,13 @@ section {
     background-color: #EEE0CB;
     padding: 20px;
     height: 100vh;
+    background-image: url('paws.jpeg'); 
   }
   
   form {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #839788;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -52,7 +53,7 @@ section {
   }
   
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: black;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -62,6 +63,6 @@ section {
   }
   
   button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: gray;
   }
   

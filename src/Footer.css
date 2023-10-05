@@ -12,7 +12,6 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    /* Hög z-index för att placera fotern över innehållet */
 }
 
 
@@ -29,19 +28,18 @@
     gap: 10px;
     align-items: center;
     width: auto;
-    /* Remove the max-width and margin-right properties */
     margin-left: auto;
-    /* Add this to push the social icons to the right */
 }
 
 #instagram {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 #facebook {
     width: 45px;
     height: 45px;
+    margin-right: 30px;
 }
 
 /* Mobilanpassat */
