@@ -5,7 +5,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-color: wheat;
+    background-color: #EEE0CB;
 }
 .info-container h3 {
     font-size: 2em;
@@ -16,4 +16,17 @@
 
 .info-container img {
     border-radius: 10px;
+}
+
+/*Mobilanpassat*/
+@media (max-width: 767px) {
+    .info-container {
+        height: 80vh;
+    }
+    .info-container h3 {
+        font-size: 1.5em;
+    }
+    .info-container img {
+        width: 70%;
+    }
 }

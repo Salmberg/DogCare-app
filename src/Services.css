@@ -1,25 +1,27 @@
 .services {
     text-align: center;
     padding: 2rem;
+    height: 100vh;
   }
   
   .service-container {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
+    margin-bottom: 40px;
+    
   }
   
   .service {
-    background-color: #f0f0f0;
+    background-color: #839788;
     padding: 1rem;
-    border: 1px solid #ddd;
     border-radius: 5px;
     width: 30%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   }
 
   #Daycare-label {
-    margin-bottom: 10rem;
+    margin-bottom: 20%;
   }
   
   .service h4 {
@@ -48,9 +50,18 @@
       align-items: center;
     }
   
-    .service {
-      width: 80%; 
-      margin-bottom: 1rem; 
+    .services {
+      text-align: center;
+      padding: 2rem;
+      height: auto; /* Remove the fixed height to allow content to expand */
     }
+  
+    .service {
+      width: 80%; /* Adjust the width to your preference */
+      margin: 1rem 0; /* Add some vertical margin to separate the service elements */
+    }
+  
+    /* You can adjust other styles as needed for better mobile presentation */
   }
+  
   

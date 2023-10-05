@@ -1,13 +1,13 @@
 import React, { Fragment, useState } from 'react';
 import './App.css';
 
-
 import Start from './Components/Start';
 import Dogs from './Components/Dogs';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
 import Info from './Components/Info';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 function App() {
   const START = 'start', DOGS = 'dogs', SERVICES = 'services', CONTACT = 'contact', INFO = 'info';
@@ -54,8 +54,10 @@ function App() {
       
       />
       <div className='content'>{content}</div>
-     
+      <Footer />
+
     </Fragment>
+    
   );
 }
 

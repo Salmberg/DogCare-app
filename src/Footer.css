@@ -1,0 +1,104 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    /* Hög z-index för att placera fotern över innehållet */
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1000px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: auto;
+    /* Remove the max-width and margin-right properties */
+    margin-left: auto;
+    /* Add this to push the social icons to the right */
+}
+
+#instagram {
+    width: 30px;
+    height: 30px;
+}
+
+#facebook {
+    width: 45px;
+    height: 45px;
+}
+
+/* Mobilanpassat */
+@media (max-width: 767px) {
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        height: 10%;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 5px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #instagram {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #facebook {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+/* Stilar för iPad (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        gap: 500px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
